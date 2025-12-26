@@ -8,6 +8,8 @@ import pandas as pd
 from src.exception_handeling import CustomException
 from src.Logger import logging
 from sklearn.model_selection import train_test_split
+from src.camponents.data_transformation import Datatransformation
+from src.camponents.data_transformation import DataTransformationconfig
 
 @dataclass
 class DataIngestionConfig:
@@ -23,7 +25,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Entered the data ingestion methord or component')
         try:
-            df=pd.read_csv('notebook\data\stud.csv')
+            df = pd.read_csv('notebook/data/stud.csv')
             logging.info('Read The dataset as dataframe')
             os.makedirs(os.path.dirname(self.ingestion_confic.train_data_path),exist_ok=True)
             df.to_csv(self.ingestion_confic.raw_data_path,index=False,header=True)
@@ -43,3 +45,8 @@ class DataIngestion:
 if __name__=='__main__':
     obj =DataIngestion()
     train_data,test_data = obj.initiate_data_ingestion()
+
+    data_transformation = Datatransformation()
+    data_transformation.initiate_data_tranformation(train_data,test_data)
+       
+ 
