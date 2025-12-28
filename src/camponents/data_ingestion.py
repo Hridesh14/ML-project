@@ -10,6 +10,8 @@ from src.Logger import logging
 from sklearn.model_selection import train_test_split
 from src.camponents.data_transformation import Datatransformation
 from src.camponents.data_transformation import DataTransformationconfig
+from src.camponents.model_tranning import Modeltranningconfig
+from src.camponents.model_tranning import ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -47,6 +49,10 @@ if __name__=='__main__':
     train_data,test_data = obj.initiate_data_ingestion()
 
     data_transformation = Datatransformation()
-    data_transformation.initiate_data_tranformation(train_data,test_data)
+    train_arr,test_arr,_ =data_transformation.initiate_data_tranformation(train_data,test_data)
+
+    model_tranner = ModelTrainer()
+    print(model_tranner.initate_model_trainner(train_arr,test_arr))
+
        
  
