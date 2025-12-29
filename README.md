@@ -1,27 +1,19 @@
 ```markdown
-# 🎓 Student Maths Score Predictor
+🎓 Student Maths Score Predictor
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Framework](https://img.shields.io/badge/Framework-Flask-green)
 ![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-## 📌 Project Overview
+📌 Project Overview
 This project is an end-to-end **Machine Learning Web Application** that predicts a student's **Math Score** based on various demographic and academic factors. The goal is to understand how variables like parental education, test preparation, and lunch type influence academic performance.
 
 The application is built using **Python, Flask, and Scikit-Learn**, featuring a complete pipeline from data ingestion to model deployment.
 
 ---
 
-## 📸 Screenshots
-*(Add your screenshots here later)*
-- **Landing Page**: Project information and call-to-action.
-- **Prediction Form**: Input form for student details.
-- **Result Popup**: Modal displaying the predicted score.
-
----
-
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 * **Frontend**: HTML5, CSS3, Bootstrap 5 (Responsive Design)
 * **Backend**: Flask (Python Web Framework)
 * **Machine Learning**: Scikit-Learn, Pandas, NumPy
@@ -30,7 +22,7 @@ The application is built using **Python, Flask, and Scikit-Learn**, featuring a 
 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 ```text
 ├── artifacts/              # Stores generated files (model.pkl, preprocessor.pkl)
 ├── notebook/               # Jupyter notebooks for EDA and experimentation
@@ -52,7 +44,7 @@ The application is built using **Python, Flask, and Scikit-Learn**, featuring a 
 
 ---
 
-## 📊 Dataset Details
+📊 Dataset Details
 
 The model trains on a dataset containing student performance records. Key features include:
 
@@ -66,14 +58,14 @@ The model trains on a dataset containing student performance records. Key featur
 
 ---
 
-## 🚀 Getting Started
+🚀 Getting Started
 
 ### Prerequisites
 
 * Python 3.8 or higher
 * Git
 
-### Installation
+Installation
 
 1. **Clone the repository**
 ```bash
@@ -110,7 +102,7 @@ Open your browser and go to: `http://127.0.0.1:5000/`
 
 ---
 
-## 🧠 Model Training Logic
+🧠 Model Training Logic
 
 The project uses a modular approach to model training:
 
@@ -135,7 +127,7 @@ The project uses a modular approach to model training:
 
 ---
 
-## 🤝 Contributing
+🤝 Contributing
 
 Contributions are welcome!
 
